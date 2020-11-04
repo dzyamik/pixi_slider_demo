@@ -3,8 +3,6 @@ bin
 .vscode/
 package-lock.json
 node_modules
-package-lock.json
-
 
 # local env files
 .env.local
