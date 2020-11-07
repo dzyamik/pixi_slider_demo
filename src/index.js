@@ -9,29 +9,7 @@ const app = new PIXI.Application({
 
 document.body.appendChild(app.view);
 
-
-// let slider1 = new Slider({
-//     x: 150,
-//     y: 250
-// });
-
-// let slider2 = new Slider({
-//     x: 10,
-//     y: 70,
-//     value: 85,
-//     container: app.view
-// })
-
-// let slider3 = new Slider({
-//     x: 10,
-//     y: 120,
-//     min: -1000,
-//     max: 2000,
-//     value: 300,
-//     disabled: true
-// })
-
-let slider4 = new Slider({
+let slider = new Slider({
     x: 100,
     y: 200,
     value: -20,
@@ -47,7 +25,7 @@ let slider4 = new Slider({
         console.log('Started', event);
     },
     onUpdate: (event, slider) => {
-        console.log(slider.value);
+        console.log('Updated value to', slider.value);
     },
     onComplete: function (event) {
         console.log('Completed', this);
@@ -55,4 +33,4 @@ let slider4 = new Slider({
 })
 
 
-app.stage.addChild(slider4);
+app.stage.addChild(slider);

@@ -595,5 +595,4 @@ class ThemeRed extends Theme {
     }
 }
 
-window.Theme = Theme;
 window.Slider = Slider;
